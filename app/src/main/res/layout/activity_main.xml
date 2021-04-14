@@ -16,7 +16,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="160dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="160dp"
             android:text="Car Rental"
             android:textSize="20sp"
@@ -30,7 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="20dp"
             android:text="Brand:"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -42,7 +42,7 @@
             android:layout_width="250dp"
             android:layout_height="24dp"
             android:layout_marginStart="40dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="20dp"
             app:layout_constraintStart_toEndOf="@+id/textView2"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -86,8 +86,8 @@
             android:layout_height="27dp"
             android:layout_marginStart="40dp"
             android:layout_marginTop="25dp"
-            android:max="10"
-            android:progress="3"
+            android:max="20"
+            android:progress="1"
             app:layout_constraintStart_toEndOf="@+id/textView4"
             app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
@@ -115,25 +115,27 @@
             app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
         <RadioGroup
+            android:id="@+id/radioGroup"
             android:layout_width="270dp"
             android:layout_height="28dp"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="5dp"
             android:layout_marginTop="25dp"
+            android:orientation="horizontal"
             app:layout_constraintStart_toEndOf="@+id/textView6"
-            app:layout_constraintTop_toBottomOf="@+id/textView4"
-            android:orientation="horizontal">
+            app:layout_constraintTop_toBottomOf="@+id/textView4">
 
             <RadioButton
                 android:id="@+id/rb21"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
+                android:checked="true"
                 android:text="Less than 21" />
 
             <RadioButton
                 android:id="@+id/rb2264"
                 android:layout_width="90dp"
                 android:layout_height="wrap_content"
-                android:text="22 to 65" />
+                android:text="22 to 64" />
 
             <RadioButton
                 android:id="@+id/rb65"
@@ -186,9 +188,9 @@
 
         <ImageView
             android:id="@+id/imgCar"
-            android:layout_width="210dp"
-            android:layout_height="144dp"
-            android:layout_marginStart="115dp"
+            android:layout_width="243dp"
+            android:layout_height="106dp"
+            android:layout_marginStart="72dp"
             android:layout_marginTop="25dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/spModel"
@@ -259,7 +261,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:text="Total Amount:"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -271,10 +273,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="35dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/textView12"
             app:layout_constraintTop_toBottomOf="@+id/btnTotal" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
