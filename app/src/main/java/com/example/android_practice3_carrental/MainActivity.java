@@ -171,18 +171,13 @@ public class MainActivity extends AppCompatActivity  {
 
         @Override
         public void onClick(View v) {
-            switch (v.getId()){
-                case R.id.rb21:
-                    insurance = 30;
-                    break;
-                case R.id.rb2264:
-                    insurance = 17;
-                    break;
-                case R.id.rb65:
-                    insurance = 22;
-                    break;
+            if(rb21.isChecked()){
+                insurance = 30;
+            } else if(rb2264.isChecked()){
+                insurance = 17;
+            } else{
+                insurance = 22;
             }
-
         }
     }
 
